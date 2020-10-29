@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "htm": "^3.0.4",
+    "pouchdb-adapter-idb": "^7.2.2",
     "preact": "^10.5.5",
     "rxdb": "^9.7.1"
   },
