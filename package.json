@@ -1,9 +1,40 @@
 {
+  "name": "demo-world-rxdb",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "budo src/index.js:bundle.js --pushstate --dir=public --live -- -p esmify -t uglifyify -dv",
+    "start": "npm run build-css && concurrently --kill-others \"npm run css-watch\" \"npm run serve\"",
+    "build-css": "node-sass --output-style=compressed src/style/main.scss > public/style.css",
+    "css-watch": "node-sass --watch src/style/main.scss --source-map-embed public/style.css",
+    "build-js": "browserify -p esmify -p bundle-collapser/plugin src/index.js -g unassertify -g uglifyify -mc > public/bundle.js",
+    "build": "npm run build-css && npm run build-js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "browserify": "^17.0.0",
-    "budo": "^11.6.4"
+    "budo": "^11.6.4",
+    "bundle-collapser": "^1.4.0",
+    "concurrently": "^5.3.0",
+    "esmify": "^2.1.1",
+    "node-sass": "^4.14.1",
+    "uglifyify": "^5.0.2",
+    "unassertify": "^2.1.1"
   },
   "dependencies": {
+    "htm": "^3.0.4",
+    "preact": "^10.5.5",
     "rxdb": "^9.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/demo-world-rxdb.git"
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/demo-world-rxdb/issues"
+  },
+  "homepage": "https://github.com/nichoth/demo-world-rxdb#readme",
+  "description": ""
 }
