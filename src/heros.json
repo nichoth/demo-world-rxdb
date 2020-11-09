@@ -1,5 +1,6 @@
 {
   "title": "hero schema",
+  "keyCompression": true,
   "version": 0,
   "description": "describes a simple hero",
   "type": "object",
@@ -7,6 +8,10 @@
       "name": {
           "type": "string",
           "primary": true
+      },
+      "age": {
+        "type": "integer",
+        "default": 20
       },
       "color": {
           "type": "string"
