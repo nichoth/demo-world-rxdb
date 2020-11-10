@@ -79,8 +79,8 @@ This is an example usage of RxDB with with the graphql-replication-plugin. It re
 ### todo
 Try this with netlify/fauna
 
-https://www.inkandswitch.com/local-first.html
-https://www.inkandswitch.com/cambria.html
+* https://www.inkandswitch.com/local-first.html
+* https://www.inkandswitch.com/cambria.html
 
 
 
