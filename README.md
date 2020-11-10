@@ -17,8 +17,9 @@ rxdb depends on a server-side database; indexedDB is used like a local cache. He
 Need to be able to delete data and not count on it being there -- this is something new for for flumeDB -- able to 'jump in' at any point in the merkle tree, just see the data that you care about
 
 ------------------------------------------------------
+
 ## 11-8-2020
-https://rxdb.info/replication-graphql.html
+Notes from https://rxdb.info/replication-graphql.html
 
 * import a plugin to sync with graphql
 ```js
@@ -63,6 +64,7 @@ import {
     SubscriptionClient
 } from 'subscriptions-transport-ws';
 // ... see webpage
+// https://rxdb.info/replication-graphql.html#using-subscriptions
 ```
 
 RxDB provides the helper functions graphQLSchemaFromRxSchema(), pullQueryBuilderFromRxSchema() and pushQueryBuilderFromRxSchema() that can be used to generate the GraphQL Schema from the RxJsonSchema. See https://github.com/pubkey/rxdb/tree/master/examples/graphql
@@ -71,6 +73,14 @@ RxDB provides the helper functions graphQLSchemaFromRxSchema(), pullQueryBuilder
 
 [RxDB GraphQL example](https://github.com/pubkey/rxdb/tree/master/examples/graphql)
 This is an example usage of RxDB with with the graphql-replication-plugin. It represents a simple hero-list which is two-way-replicated with the server.
+
+[dont know what this is](https://www.apollographql.com/blog/full-stack-react-graphql-tutorial-582ac8d24e3b/)
+
+### todo
+Try this with netlify/fauna
+
+https://www.inkandswitch.com/local-first.html
+https://www.inkandswitch.com/cambria.html
 
 
 
