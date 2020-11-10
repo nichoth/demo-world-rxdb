@@ -67,7 +67,7 @@ import {
 // https://rxdb.info/replication-graphql.html#using-subscriptions
 ```
 
-RxDB provides the helper functions graphQLSchemaFromRxSchema(), pullQueryBuilderFromRxSchema() and pushQueryBuilderFromRxSchema() that can be used to generate the GraphQL Schema from the RxJsonSchema. See https://github.com/pubkey/rxdb/tree/master/examples/graphql
+RxDB provides the helper functions `graphQLSchemaFromRxSchema()`, `pullQueryBuilderFromRxSchema()` and `pushQueryBuilderFromRxSchema()` that can be used to generate the GraphQL Schema from the RxJsonSchema. See https://github.com/pubkey/rxdb/tree/master/examples/graphql
 
 -------------------------------------------------
 
